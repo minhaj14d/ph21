@@ -1,0 +1,101 @@
+/* .header-container {
+    height: 100vh;
+    background-color: var(--background-color);
+} */
+.nav{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--font-primary-color);
+    font-size: 32px;
+} */
+padding-top: 30px;
+display: flex;
+gap: 20px;
+justify-content: space-between;
+color: var(--font-primary-color);
+font-size: 21px;
+flex-direction: row;
+align-items: center;
+}
+
+.button {
+    display: flex;
+    background: var(--logo-primary-color);
+    height: 52px;
+    width: 188px;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    font-family:'Poppins';
+    font-weight: 700;
+    color: var(--logo-primary-color);
+    text-transform: uppercase;
+    width: 200px;
+}
+.banner-title{
+    font-size: 40px;
+    color: var(--font-primary-color);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 20px 0px 20px;
+    gap: 12px;
+
+}
+.banner-desc{
+    font-size: 18px;
+    color: var(--font-secondary-color);
+    display: flex;
+    margin: 0px 0px 20px;
+}
+.orange-text{
+    color: var(--logo-primary-color);
+    font-weight: 800;
+}
+.banner-3{
+    font-weight: 300;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.portfolio-button-container {
+    display: flex;
+    gap: 10px;
+    height: 72px;
+    width: 367px;
+    border: 2px solid grey;
+    border-radius: 50px;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 30px;
+    color: var(--font-primary-color);
+    background-color: var(--logo-primary-color);
+    border: none;
+    border-radius: 50px;
+    height: 38px;
+    margin-left: 10px;
+}
+
+.hireme-button {
+    display: flex;
+    align-items: right; /* Center content vertically */
+    justify-content: flex-end;
+    gap: 10px;
+    padding: auto;
+    color: var(--font-primary-color);
+    align-items: flex-end;
+}
