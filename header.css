@@ -6,7 +6,9 @@
     font-weight: 700;
     color: var(--logo-primary-color);
     text-transform: uppercase;
+    
 }
+
 .nav{
     padding-top: 30px;
     display: flex;
@@ -16,6 +18,9 @@
     font-size: 21px;
     flex-direction: row;
     align-items: center;
+}
+.left-side, .right-side {
+    flex: 1;
 }
 
 .button {
@@ -34,9 +39,12 @@
 .banner-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .banner-image-container {
     display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 .banner-image {
     max-width: 90%;
@@ -74,44 +82,43 @@
 .portfolio-button-container {
     display: flex;
     gap: 10px;
-    height: 72px;
-    width: 367px;
-    border: 2px solid grey;
-    border-radius: 50px;
-    font-size: 25px;
-    align-items: center;
-    justify-content: space-between;
+    height: 52px;
+    width: 230px;
+    margin-top: 20px;
+    background-size: 200px;
     background-color: #333333;
+    border-radius: 50px;
+    border: 2px solid grey;
+    flex-wrap: nowrap;
 }
 
-.portfolio-button {
+.portfolio-button, .hireme-button {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    padding: 10px 30px;
+    padding: 10px 20px 10px 10px;
     color: var(--font-primary-color);
     background-color: var(--logo-primary-color);
     border: none;
     border-radius: 50px;
-    height: 34px;
-    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 100%;
+    flex-wrap: nowrap;
 }
 
 .hireme-button {
-    display: flex;
-    align-items: right; /* Center content vertically */
-    justify-content: flex-end;
-    gap: 10px;
-    padding: auto;
-    color: var(--font-primary-color);
-    align-items: flex-end;
+    background-color: #333333;
+    flex-wrap: nowrap;
 }
+
 .social-button{
     display: flex;
     font-size: 32px;
     gap: 20px;
+    padding: 0px 10px;
     margin-top: 20px;
     width: 200px;
     color: var(--logo-secondary-color);
@@ -133,7 +140,7 @@
     justify-content: end;
 }
 
-.ribbon-container {
+/* .ribbon-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,37 +155,89 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000; /* Ribbon background color */
-    color: white; /* Ribbon text color */
-    /* padding: 10px 20px; */
-    transform: rotate(-5deg); /* Tilt the ribbon */
+    background-color: #000;
+    padding: 10px 20px;
+    transform: rotate(-5deg);
     white-space: nowrap;
 }
 .ribbon span{
     font-weight: 400;
     margin: 0px 20px;
+} */
+
+.about-me-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+.about-me-text, .experience {
+    flex: 1;
+    padding-top: 40px;
+    color: var(--font-primary-color);
+}
+.about-me-text h1{
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 0px 0px 20px;
+}
+.about-me-text p{
+    font-size: 16px;
+    color: var(--font-secondary-color);
+}
+.experience {
+    font-size: 20px;
+    text-align: right;
+}
+.experience h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+.experience i{
+    color: var(--logo-primary-color);
 }
 
 @media only screen and (min-width: 200px) and (max-width: 576px) {
-    .nav{
-        font-size: 16px;
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap; /* Ensure elements wrap on smaller screens */
+    }
+    
+    .banner-container {
+        flex: 1;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
-.logo{
-    display: flex;
-    justify-content: center;
-}
-.banner-title{
-    margin-top: 10%;
-}
-.banner-3{
-    font-size: 100%;
-}
-/* .portfolio-button-container {
-
-} */
-
-
+    
+    .banner-image-container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex: 1;
+    }
+    
+    .banner-image {
+        max-width: 100%;
+        height: auto;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+        .social-button-container {
+            text-align: center; /* Center the social buttons */
+        }
+        .social-button {
+            justify-content: center; /* Center the social icons */
+        }
 }
