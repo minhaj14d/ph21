@@ -169,9 +169,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 0;
-    padding: 0 20px;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 .about-me-text, .experience {
     flex: 1;
@@ -195,11 +194,88 @@
 .experience h1{
     font-size: 40px;
     font-weight: 800;
+    text-transform: uppercase;
+
 }
 .experience i{
     color: var(--logo-primary-color);
 }
 
+.experience-container-bg {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(#FFB1471A,#FF6C631A,#B86ADF1A);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .experience-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--font-primary-color);
+    padding: 10px;
+  }
+  .left-column {
+    flex: 1;
+    padding-right: 60px;
+  }
+  .right-column {
+    flex: 1;
+    font-size: 20px;
+    position: relative;  
+  }
+  
+  h1 {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  p {
+    line-height: 1.5;
+  }
+  
+  .job {
+    padding: 20px;
+    margin: 10px 20px 10px;
+    border-bottom: 1px solid var(--font-secondary-color);
+  }
+  
+  .job-period {
+    color: white;
+    font-weight: 500;
+    text-align: left;
+    border-top: 2px;
+    border-color: white;
+    font-style: italic;
+  }
+  
+  .job-title {
+    font-size: 32px;;
+    color: var(--font-primary-color);
+    font-weight: 700;
+    padding: 10px;
+    display: flex;
+    margin: 10px 5px;
+  }
+  
+  .company {
+    color: var(--font-secondary-color);
+    align-content: flex-end;
+    text-align: right;
+    padding-left: 40%;
+  }
 @media only screen and (min-width: 200px) and (max-width: 576px) {
     .header-container {
         display: flex;
