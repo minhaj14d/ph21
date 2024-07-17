@@ -23,10 +23,10 @@
 body{
     background-color: var(--background-color);
 }
-.container{
+/* .container{
     padding: 0px 60px;
     margin: 10px 60px;
-}
+} */
 #star-id{
     color: #FD6F00;
     padding: 2px 2px;

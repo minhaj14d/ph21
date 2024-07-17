@@ -11,6 +11,7 @@
 
 .nav{
     padding-top: 30px;
+    padding: 0 60px;
     display: flex;
     gap: 10px;
     justify-content: space-between;
@@ -35,6 +36,7 @@
 .header-container {
     display: flex;
     justify-content: space-between;
+    padding: 0 60px;
 }
 .banner-container {
     display: flex;
@@ -171,6 +173,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    padding: 0 60px;
 }
 .about-me-text, .experience {
     flex: 1;
@@ -200,7 +203,14 @@
 .experience i{
     color: var(--logo-primary-color);
 }
-
+.experience-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--font-primary-color);
+  }
 .experience-container-bg {
     width: 100%;
     min-height: 100vh;
@@ -210,17 +220,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .experience-container {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    color: var(--font-primary-color);
-    padding: 10px;
   }
   .left-column {
     flex: 1;
@@ -344,6 +343,56 @@
     text-align: left;
 }
 
+.footer-1 {
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Ensure child elements stack vertically */
+    justify-content: center;
+    align-items: center;
+    color: var(--font-primary-color);
+    margin-top: 40px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-1 h1 {
+    text-align: center; /* Center text within the heading */
+    font-size: 60px;
+    font-family:'Poppins';
+    font-weight: 700;
+    color: var(--logo-primary-color);
+    text-transform: uppercase;
+}
+
+.footer-1 i {
+    color: white;
+}
+
+.footer-menu {
+    padding-top: 30px;
+    display: flex;
+    gap: 80px;
+    justify-content: center; /* Center the footer menu items */
+    color: var(--font-primary-color);
+    font-size: 21px;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1000px;
+    margin-bottom: 80px;
+}
+
+.footer-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    color: var(--font-primary-color);
+    height: 80px;
+    margin-top: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 @media only screen and (min-width: 200px) and (max-width: 576px) {
     .header-container {
