@@ -336,7 +336,7 @@
     align-items: center;
     font-weight: 600;
 }
-p {
+.awards-container p {
     display: inline-block;
     max-width: 600px;
     color: var(--font-secondary-color);
