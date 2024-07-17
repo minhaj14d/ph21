@@ -225,6 +225,7 @@
   .left-column {
     flex: 1;
     padding-right: 60px;
+    text-align: left;
   }
   .right-column {
     flex: 1;
@@ -276,6 +277,74 @@
     text-align: right;
     padding-left: 40%;
   }
+
+  .awards-container{
+    display: flex;
+    color: var(--font-primary-color);
+    padding: 10px;
+    margin: 60px;
+    justify-content: space-around;
+    align-content: center;
+  }
+  .awards {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center text within elements */
+    padding: 20px; /* Optional: Adds some space around the content */
+    
+}
+
+.awards h1{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.awards p.awards-desc {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px; /* Adds some space below the title and description */
+}
+
+  .awards-list-1, .awards-list-2 {
+    color: var(--font-primary-color);
+    background-color: black;
+    padding: 10px;
+    margin: 20px; /* Removed unnecessary repetition */
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; /* Moved justify-content here as it was misplaced */
+    
+}
+
+.awards-title, .awards-period{
+    color: var(--font-primary-color);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Added justify-content here as it was missing */
+    margin: 10px;
+}
+.awards-title {
+    font-size: 24px;
+
+}
+.awards-period{
+    font-size: 16px;
+    align-items: center;
+    font-weight: 600;
+}
+p {
+    display: inline-block;
+    max-width: 600px;
+    color: var(--font-secondary-color);
+    margin: 20px;
+    text-align: left;
+}
+
+
 @media only screen and (min-width: 200px) and (max-width: 576px) {
     .header-container {
         display: flex;
