@@ -10,7 +10,7 @@
 }
 
 .nav{
-    padding-top: 30px;
+    margin-top: 40px;
     padding: 0 100px;
     display: flex;
     gap: 10px;
@@ -84,6 +84,7 @@
 
 .portfolio-button-container {
     display: flex;
+    padding: 10px;
     gap: 10px;
     height: 52px;
     width: 230px;
@@ -152,7 +153,7 @@
     position: relative;
     z-index: 1;
     margin-top: 20px;
-    margin-bottom: 30px; /* Add this to pull the about section up slightly */
+    margin-bottom: 30px;
 }
 .about-me-text, .experience {
     flex: 1;
@@ -185,7 +186,6 @@
 .experience-container {
     width: 100%;
     display: flex;
-    padding: 0 100px;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -203,15 +203,15 @@
   }
   .left-column {
     flex: 1;
-    padding-right: 60px;
+    padding-right: 100px;
     text-align: left;
-    padding-left: 60px;
+    padding-left: 100px;
   }
   .right-column {
     flex: 1;
     font-size: 20px;
     position: relative; 
-    padding-right: 60px; 
+    padding-right: 100px; 
   }
   
   h1 {
@@ -269,11 +269,11 @@
   }
   .awards {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    text-align: center; /* Center text within elements */
-    padding: 20px; /* Optional: Adds some space around the content */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 100px;
     
 }
 
@@ -284,20 +284,19 @@
 .awards p.awards-desc {
     font-size: 18px;
     text-align: center;
-    margin-bottom: 20px; /* Adds some space below the title and description */
+    margin-bottom: 20px;
 }
 
   .awards-list-1, .awards-list-2 {
     color: var(--font-primary-color);
     background-color: black;
     padding: 10px;
-    margin: 20px; /* Removed unnecessary repetition */
+    margin: 20px;
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between; /* Moved justify-content here as it was misplaced */
-    
+    justify-content: space-between;
 }
 
 .awards-title, .awards-period{
@@ -305,7 +304,7 @@
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Added justify-content here as it was missing */
+    justify-content: space-between;
     margin: 10px;
 }
 .awards-title {
@@ -325,10 +324,196 @@
     text-align: left;
 }
 
+
+.ribbon-container {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: -100px;
+    margin-bottom: 40px;
+}
+
+.ribbon {
+    background-color: black;
+    color: white;
+    font-size: 21px;
+    white-space: nowrap;
+    padding: 20px;
+    transform: rotate(-2deg);
+    position: relative;
+    left: -10%;
+    width: 120%;
+}
+
+.ribbon-content {
+    display: flex;
+    align-items: center;
+    animation: scrollText 20s linear infinite;
+}
+
+.ribbon span {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.ribbon span::after {
+    content: '★';
+    color: var(--logo-primary-color);
+    margin-left: 20px;
+}
+
+@keyframes scrollText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+    color: var(--font-primary-color);
+}
+
+.contact-section h1 {
+    margin: 0;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.contact-section h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.form-container {
+    background-color: rgba(253, 111, 0, 0.1);
+    padding: 40px 100px;
+    max-width: 1000px;
+    justify-content: center;
+    margin: 0 auto;
+    color: var(--font-primary-color);
+    max-width: 1000px;
+
+}
+
+.form-container h2 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-style: none;
+    background-color: rgba(253, 111, 0, 0.1);
+}
+
+.form-container input[type="text"], .form-container input[type="email"] {
+    display: inline-block;
+    width: calc(50% - 12px);
+    
+}
+
+.form-container textarea {
+    height: 100px;
+}
+
+.form-container .file-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.form-container .file-input-container input[type="file"] {
+    margin-left: 10px;
+    max-width: 600px;
+}
+
+.form-container .submit-btn {
+    background-color: #FF6A00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.portfolio-section {
+    text-align: center;
+    padding: 50px 0;
+    color: var(--font-primary-color);
+    padding: 0 60px;
+}
+.portfolio-section h1 {
+    margin: 0;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.portfolio-section h3{
+    font-weight: 700;
+}
+.portfolio-section p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.filter-buttons {
+    margin: 20px 0;
+}
+.filter-buttons button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.filter-buttons .active {
+    background-color: #FF6A00;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    background-color: rgba(253, 111, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.portfolio-item h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.portfolio-item p {
+    font-size: 14px;
+    color: var(--font-secondary-color);
+}
+
 .footer-1 {
     background-color: black;
     display: flex;
-    flex-direction: column; /* Ensure child elements stack vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--font-primary-color);
@@ -339,7 +524,7 @@
 }
 
 .footer-1 h1 {
-    text-align: center; /* Center text within the heading */
+    text-align: center;
     font-size: 60px;
     font-family:'Poppins';
     font-weight: 700;
@@ -349,19 +534,20 @@
 
 .footer-1 i {
     color: white;
+    margin: 0 0 40px;
 }
 
 .footer-menu {
     padding-top: 30px;
     display: flex;
     gap: 80px;
-    justify-content: center; /* Center the footer menu items */
+    justify-content: center;
     color: var(--font-primary-color);
     font-size: 21px;
     flex-direction: row;
     align-items: center;
     max-width: 1000px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .footer-2 {
@@ -369,51 +555,13 @@
     justify-content: center;
     align-items: center;
     color: var(--font-primary-color);
-    height: 80px;
-    margin: 20px;
+    height: 60px;
     width: 100%;
-    box-sizing: border-box;
     font-size: 21px;
 }
-
-@media only screen and (min-width: 200px) and (max-width: 576px) {
-    .header-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap; /* Ensure elements wrap on smaller screens */
-    }
-    
-    .banner-container {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .banner-image-container {
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-        flex: 1;
-    }
-    
-    .banner-image {
-        max-width: 100%;
-        height: auto;
-    }
-    .nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-    }
-        .social-button-container {
-            text-align: center; /* Center the social buttons */
-        }
-        .social-button {
-            justify-content: center; /* Center the social icons */
-        }
+#footer-logo-id{
+    font-family:'Poppins';
+    font-weight: 700;
+    color: var(--logo-primary-color);
+    text-transform: uppercase;
 }
