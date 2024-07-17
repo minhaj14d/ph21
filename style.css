@@ -1,18 +1,47 @@
-/* body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.ribbon-container {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: -100px;
+    margin-bottom: 40px;
 }
 
-.content-wrapper {
-    padding-left: 20px; 
-    padding-right: 20px;
-    padding: 0 20px;
+.ribbon {
+    background-color: black;
+    color: white;
+    font-size: 21px;
+    white-space: nowrap;
+    padding: 20px;
+    transform: rotate(-2deg);
+    position: relative;
+    left: -10%;
+    width: 120%;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
-} */
+.ribbon-content {
+    display: flex;
+    align-items: center;
+    animation: scrollText 20s linear infinite;
+}
+
+.ribbon span {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.ribbon span::after {
+    content: '★';
+    color: var(--logo-primary-color);
+    margin-left: 20px;
+}
+
+@keyframes scrollText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
 
 .contact-section {
     text-align: center;
@@ -86,4 +115,71 @@
     border: none;
     cursor: pointer;
     font-size: 16px;
+}
+.portfolio-section {
+    text-align: center;
+    padding: 50px 0;
+    color: var(--font-primary-color);
+    padding: 0 60px;
+}
+.portfolio-section h1 {
+    margin: 0;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.portfolio-section h3{
+    font-weight: 700;
+}
+.portfolio-section p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.filter-buttons {
+    margin: 20px 0;
+}
+.filter-buttons button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.filter-buttons .active {
+    background-color: #FF6A00;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    background-color: #4A2D21;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.portfolio-item h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.portfolio-item p {
+    font-size: 14px;
+    color: var(--font-secondary-color);
 }
